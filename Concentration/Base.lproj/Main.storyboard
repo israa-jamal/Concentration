@@ -15,42 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFD-0Y-VtY">
-                                <rect key="frame" x="250" y="506" width="121" height="207"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.41420372389193993" green="0.2325104990197584" blue="0.68250317258883242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="85"/>
-                                <state key="normal" title="😍"/>
-                                <connections>
-                                    <action selector="cardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NP2-km-Mqw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVA-nR-YVW">
-                                <rect key="frame" x="251" y="44" width="121" height="207"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.41420372389193993" green="0.2325104990197584" blue="0.68250317258883242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="85"/>
-                                <state key="normal" title="😥"/>
-                                <connections>
-                                    <action selector="cardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Fe-ng-hXM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NkM-gc-Umn">
-                                <rect key="frame" x="251" y="273" width="121" height="207"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.41420372389193993" green="0.2325104990197584" blue="0.68250317258883242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="85"/>
-                                <state key="normal" title="😡"/>
-                                <connections>
-                                    <action selector="cardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L0S-VF-an4"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDZ-is-fje">
-                                <rect key="frame" x="207" y="811" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="0.98623031380000004" green="0.62275254729999996" blue="0.046741388740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5W-3p-TBa">
                                 <rect key="frame" x="46" y="504" width="121" height="207"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -59,6 +23,16 @@
                                 <state key="normal" title="😥"/>
                                 <connections>
                                     <action selector="cardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OKt-pw-ewk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFD-0Y-VtY">
+                                <rect key="frame" x="250" y="506" width="121" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41420372389193993" green="0.2325104990197584" blue="0.68250317258883242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="85"/>
+                                <state key="normal" title="😍"/>
+                                <connections>
+                                    <action selector="cardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NP2-km-Mqw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KN9-WY-Clm">
@@ -71,6 +45,16 @@
                                     <action selector="cardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EL7-XI-gA0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVA-nR-YVW">
+                                <rect key="frame" x="251" y="44" width="121" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41420372389193993" green="0.2325104990197584" blue="0.68250317258883242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="85"/>
+                                <state key="normal" title="😥"/>
+                                <connections>
+                                    <action selector="cardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Fe-ng-hXM"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOT-Dx-rCe">
                                 <rect key="frame" x="46" y="271" width="121" height="207"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -81,9 +65,29 @@
                                     <action selector="cardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfO-NT-2bQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NkM-gc-Umn">
+                                <rect key="frame" x="251" y="273" width="121" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41420372389193993" green="0.2325104990197584" blue="0.68250317258883242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="85"/>
+                                <state key="normal" title="😡"/>
+                                <connections>
+                                    <action selector="cardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L0S-VF-an4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDZ-is-fje">
+                                <rect key="frame" x="201.5" y="784" width="11.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Z2p-mh-nax"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.98623031380000004" green="0.62275254729999996" blue="0.046741388740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fDZ-is-fje" secondAttribute="bottom" constant="28" id="NQN-SE-fSp"/>
                             <constraint firstItem="fDZ-is-fje" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jzi-i8-Tdz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
