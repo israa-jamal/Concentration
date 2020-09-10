@@ -18,10 +18,18 @@ class ViewController: UIViewController {
     @IBOutlet var cardButtons: [UIButton]!
     
     //array of emojis
-    let emojis = ["👾" ,"🧚🏻‍♂️" ,"🧞‍♂️" ,"🏎️" ,"👽" ,"🐲" ,"🤖" ,"🤺" ,"👻"]
+    var emojisArray = ["👾" ,"🧚🏻‍♂️" ,"🧞‍♂️" ,"🏎️" ,"👽" ,"🐲" ,"🤖" ,"🤺" ,"👻"]
+    var emojis = [Int: String]()
+    
     func emoji (for card: Card) -> String{
-        return "?"
+        if emojis[card.ident] == nil, emojisArray.count > 0{
+                let randomIndex = Int(arc4random_uniform(UInt32(emojisArray.count)))
+                emojis[card.ident] = emojisArray.remove(at: randomIndex)
+            
+        }
+        return emojis[card.ident] ?? "?"
     }
+    
     var count = 0
     {
         //whenever the count change the flipLabel change
@@ -53,11 +61,11 @@ class ViewController: UIViewController {
             
             if card.isDisplayed{
                 button.setTitle("", for: .normal)
-                button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+                button.backgroundColor = #colorLiteral(red: 0.4142037239, green: 0.232510499, blue: 0.6825031726, alpha: 1)
             }else{
                 //when the card is visable flip it down
                 button.setTitle(emoji(for: card), for: .normal)
-                button.backgroundColor = card.isMatched ? #colorLiteral(red: 0.4142037239, green: 0.232510499, blue: 0.6825031726, alpha: 0) : #colorLiteral(red: 0.4142037239, green: 0.232510499, blue: 0.6825031726, alpha: 1)
+                button.backgroundColor = card.isMatched ? #colorLiteral(red: 0.4142037239, green: 0.232510499, blue: 0.6825031726, alpha: 0) : #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             }
         }
     }

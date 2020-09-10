@@ -20,7 +20,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.41420372389193993" green="0.2325104990197584" blue="0.68250317258883242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="85"/>
-                                <state key="normal" title="😥"/>
                                 <connections>
                                     <action selector="cardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OKt-pw-ewk"/>
                                 </connections>
@@ -30,7 +29,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.41420372389193993" green="0.2325104990197584" blue="0.68250317258883242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="85"/>
-                                <state key="normal" title="😍"/>
                                 <connections>
                                     <action selector="cardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NP2-km-Mqw"/>
                                 </connections>
@@ -40,7 +38,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.41420372389193993" green="0.2325104990197584" blue="0.68250317258883242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="85"/>
-                                <state key="normal" title="😡"/>
                                 <connections>
                                     <action selector="cardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EL7-XI-gA0"/>
                                 </connections>
@@ -50,7 +47,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.41420372389193993" green="0.2325104990197584" blue="0.68250317258883242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="85"/>
-                                <state key="normal" title="😥"/>
                                 <connections>
                                     <action selector="cardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Fe-ng-hXM"/>
                                 </connections>
@@ -60,7 +56,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.41420372389193993" green="0.2325104990197584" blue="0.68250317258883242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="85"/>
-                                <state key="normal" title="😍"/>
                                 <connections>
                                     <action selector="cardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfO-NT-2bQ"/>
                                 </connections>
@@ -70,7 +65,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.41420372389193993" green="0.2325104990197584" blue="0.68250317258883242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="85"/>
-                                <state key="normal" title="😡"/>
                                 <connections>
                                     <action selector="cardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L0S-VF-an4"/>
                                 </connections>

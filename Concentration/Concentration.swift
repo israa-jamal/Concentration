@@ -27,7 +27,11 @@ class Concentration{
     }
     
     func chooseCard(at index: Int){
-        
+        if cards[index].isDisplayed{
+            cards[index].isDisplayed = false
+        }else{
+            cards[index].isDisplayed = true
+        }
     }
     // shuffle the cards
 }
