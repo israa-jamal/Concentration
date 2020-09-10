@@ -17,18 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var flipLabel: UILabel!
     @IBOutlet var cardButtons: [UIButton]!
     
-    //array of emojis
-    var emojisArray = ["👾" ,"🧚🏻‍♂️" ,"🧞‍♂️" ,"🏎️" ,"👽" ,"🐲" ,"🤖" ,"🤺" ,"👻"]
-    var emojis = [Int: String]()
-    
-    func emoji (for card: Card) -> String{
-        if emojis[card.ident] == nil, emojisArray.count > 0{
-                let randomIndex = Int(arc4random_uniform(UInt32(emojisArray.count)))
-                emojis[card.ident] = emojisArray.remove(at: randomIndex)
-            
-        }
-        return emojis[card.ident] ?? "?"
-    }
+   
     
     var count = 0
     {
@@ -69,6 +58,19 @@ class ViewController: UIViewController {
             }
         }
     }
+    var emojisArray = ["👾" ,"🧚🏻‍♂️" ,"🧞‍♂️" ,"🏎️" ,"👽" ,"🐲" ,"🤖" ,"🤺" ,"👻"]
+       var emojis = [Int: String]()
+       
+       //setting an emoji for a card
+       func emoji (for card: Card) -> String{
+           //if the card is not already in the dic and there are still avaiable emojis:
+           if emojis[card.ident] == nil, emojisArray.count > 0{
+               //get a random index and put its emoji in the dic
+                   let randomIndex = Int(arc4random_uniform(UInt32(emojisArray.count)))
+                   emojis[card.ident] = emojisArray.remove(at: randomIndex)
+           }
+           return emojis[card.ident] ?? "?"
+       }
     
     
     

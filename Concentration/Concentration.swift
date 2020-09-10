@@ -12,7 +12,7 @@ class Concentration{
     
     //array of struct card
     var cards = [Card]()
-    
+    var indexOfOnlyOneCardFacedUp: Int?
     //when you use concentration you have to init the number of pairs
     init(numOfPairOfCards : Int) {
         //give every card a unique identifer
@@ -27,10 +27,21 @@ class Concentration{
     }
     
     func chooseCard(at index: Int){
-        if cards[index].isDisplayed{
-            cards[index].isDisplayed = false
-        }else{
-            cards[index].isDisplayed = true
+        if !cards[index].isMatched{
+            if let matchIndex = indexOfOnlyOneCardFacedUp, matchIndex != index{
+                if cards[matchIndex].ident == cards[index].ident{
+                    cards[matchIndex].isMatched = true
+                    cards[index].isMatched = true
+                }
+                cards[index].isDisplayed = true
+                indexOfOnlyOneCardFacedUp = nil
+            }else{
+                for flipDownIndex in cards.indices{
+                    cards[flipDownIndex].isDisplayed = false
+                }
+                cards[index].isDisplayed = true
+                indexOfOnlyOneCardFacedUp = index
+            }
         }
     }
     // shuffle the cards
