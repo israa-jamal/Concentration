@@ -11,7 +11,12 @@ struct Card {
     var isDisplayed = false
     var isMatched = false
     var ident : Int
-    init(identifer : Int) {
-        self.ident = identifer
+    private static var identiferFactory = 0
+    private static func getUniqueIdentifer() -> Int {
+        identiferFactory += 1
+        return identiferFactory
+    }
+    init() {
+        self.ident = Card.getUniqueIdentifer()
     }
 }
